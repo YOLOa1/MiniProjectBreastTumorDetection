@@ -34,9 +34,7 @@ Ce script comprend :
 
 ## 🚀 Exécution
 
-### 1. Pré-requis
+Input : 
 
-Installez les dépendances nécessaires :
+![Texte alternatif](Example of usage/Input.jpg)
 
-```bash
-pip install torch torchvision pydicom numpy
