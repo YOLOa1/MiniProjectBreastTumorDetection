@@ -11,7 +11,7 @@ Le projet est orienté vers une application en diagnostic assisté par intellige
 
 ## 🧰 Technologies utilisées
 
-- Python 3.x
+- Python 3.11
 - PyTorch
 - Torchvision
 - pydicom
