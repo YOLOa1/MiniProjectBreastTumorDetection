@@ -19,6 +19,16 @@ Le projet est orienté vers une application en diagnostic assisté par intellige
 
 ---
 
+## Dataset
+
+ <strong>L'accès au dataset à partie de ce lien</strong><br>
+        <a href="https://exemple.com/input_full.jpg">
+          ICI
+        </a>
+
+
+---
+
 ## 🗂️ Organisation du code
 
 ### `Model_Training.py`
