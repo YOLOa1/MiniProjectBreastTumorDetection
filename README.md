@@ -34,11 +34,8 @@ Ce script comprend :
 
 ## 🚀 Exécution
 
-Input : 
-
-![IMAGE](Example%20of%20usage/Input.jpg)
 
 <p float="left">
-  <img src="images/image1.png" width="300"/>
-  <img src="images/image2.png" width="300"/>
+  <img src="Example%20of%20usage/Input.jpg" width="300"/>
+  <img src="Example%20of%20usage/Input.jpg" width="300"/>
 </p>
