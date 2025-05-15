@@ -35,7 +35,18 @@ Ce script comprend :
 ## 🚀 Exécution
 
 
-<p float="left">
-  <img src="Example%20of%20usage/Input.jpg" width="300"/>
-  <img src="Example%20of%20usage/Input.jpg" width="300"/>
-</p>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <strong>Input</strong><br>
+        <img src="Example%20of%20usage/Input.jpg" width="300" style="margin-right: 20px;"/>
+      </td>
+      <td align="center">
+        <strong>Output</strong><br>
+        <img src="Example%20of%20usage/Output.png" width="300" style="margin-left: 20px;"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
