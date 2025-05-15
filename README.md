@@ -36,5 +36,5 @@ Ce script comprend :
 
 Input : 
 
-![IMAGE](Exampl%20of%20usage/Input.jpg)
+![IMAGE](Example%20of%20usage/Input.jpg)
 
