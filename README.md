@@ -28,7 +28,7 @@ Ce script comprend :
 - 📁 **Chargement des données DICOM** : lecture des slices d’imagerie médicale et des masques de tumeurs.
 - 🧠 **Création d’un dataset personnalisé** : `DicomTumorDataset` pour coupler les images et les masques.
 - 🏗️ **Entraînement d’un modèle Faster R-CNN** pré-entraîné, adapté à notre tâche de détection binaire (présence ou absence de tumeur).
-- 💾 **Sauvegarde du modèle entraîné** : le modèle est enregistré sous le nom `fasterrcnn_dicom_tumor_2.pth`.
+- 💾 **Sauvegarde du modèle entraîné** : le modèle est enregistré sous le nom `fasterrcnn_dicom_tumor.pth`.
 
 ---
 
