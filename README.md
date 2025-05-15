@@ -23,7 +23,7 @@ Le projet est orienté vers une application en diagnostic assisté par intellige
 
  <strong>L'accès au dataset à partie de ce lien</strong><br>
         <a href="https://exemple.com/input_full.jpg">
-          ICI
+          Duke-Breast-Cancer-MRI
         </a>
 
 
