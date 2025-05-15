@@ -44,6 +44,7 @@ Ce script comprend :
 
 ## 🚀 Exécution
 
+Lien de l'application streamlit : <a href="https://miniprojectbreastcancerdetection.streamlit.app/">STREAMLIT</a>
 
 <div align="center">
   <table>
