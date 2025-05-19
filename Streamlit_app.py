@@ -13,6 +13,8 @@ from torchvision import transforms as T
 import zipfile
 import cv2
 from io import BytesIO
+import tempfile  # Add this import for temporary file storage
+import os  # Add this import for working with local directories
 
 st.set_page_config(page_title="Tumor Detection Demo", page_icon="🩺")
 
@@ -124,8 +126,20 @@ def process_multiple_dicom(zip_file, model):
         if not dicom_files:
             st.error("No DICOM files found in the ZIP archive.")
             return
+        
+        # Define a local directory to store processed images
+        output_dir = "processed_images"
+        os.makedirs(output_dir, exist_ok=True)  # Create the directory if it doesn't exist
+
         images_with_boxes = []
-        for dicom_file in dicom_files:
+        for idx, dicom_file in enumerate(dicom_files):
+            output_path = os.path.join(output_dir, f"slice_{idx + 1}.png")
+            
+            # Skip processing if the image already exists
+            if os.path.exists(output_path):
+                images_with_boxes.append(output_path)
+                continue
+
             with z.open(dicom_file) as file:
                 ds = pydicom.dcmread(file)
                 image = ds.pixel_array
@@ -138,6 +152,7 @@ def process_multiple_dicom(zip_file, model):
                 ])
                 image_tensor = transform(image).unsqueeze(0)
                 boxes, labels, scores = predict_and_visualize(image_tensor, model)
+                
                 # Draw bounding boxes on the image
                 fig, ax = plt.subplots(1, figsize=(6, 6))
                 ax.imshow(image, cmap="gray")
@@ -159,18 +174,20 @@ def process_multiple_dicom(zip_file, model):
                             ax.text(x1, y1 - 10, f"Label: {label}, Score: {score:.2f}",
                                     color='red', fontsize=10, weight='bold')
                 ax.axis("off")
-                buf = BytesIO()
-                plt.savefig(buf, format="png", bbox_inches='tight', pad_inches=0)
+                
+                # Save the processed image to the local directory
+                plt.savefig(output_path, format="png", bbox_inches='tight', pad_inches=0)
                 plt.close(fig)
-                buf.seek(0)
-                images_with_boxes.append(buf.read())
+                images_with_boxes.append(output_path)
+        
+        # Display the stored images
         if images_with_boxes:
             idx = st.slider("Select slice", 0, len(images_with_boxes) - 1, 0)
             st.image(images_with_boxes[idx], caption=f"Slice {idx+1} of {len(images_with_boxes)}", use_column_width=True)
 
 def multiple_predictions_page():
     st.markdown("# Multiple Predictions")
-    model = load_model("fasterrcnn_dicom_tumor.pth")
+    model = load_model("fasterrcnn_tumor_detection.pth")
     st.success("Model loaded successfully!")
     uploaded_zip = st.file_uploader("Upload a ZIP file containing DICOM files", type=["zip"])
     if uploaded_zip:
