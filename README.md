@@ -76,4 +76,10 @@ Exemple d'une visualisation sur un ensemble d'image hors entrainement :
   <li><a href="https://www.linkedin.com/in/adam-najid/" target="_blank" rel="noopener noreferrer">NAJID Adam</a></li>
   <li><a href="https://www.linkedin.com/in/romaissae-belhaj-635000360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">BELHAJ Romaissae</a></li>
 </ul>
+<p>Ce projet a été réalisé dans le cadre de notre formation, sous l'encadrement de :</p>
+<ul>
+  <li>EL OSSMANI Mustapha</li>
+  <li>BERRADA Mohammed</li>
+</ul>
 <p>Faites-nous savoir comment nous pourrions améliorer le projet ou collaborer avec vous !</p>
+
