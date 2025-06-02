@@ -67,3 +67,13 @@ Exemple d'une visualisation sur un ensemble d'image hors entrainement :
   </table>
 </div>
 
+---
+
+
+## 📬 Feedback & Contact</h2>
+<p>Nous serions ravis d’avoir votre avis, vos suggestions ou vos questions sur ce projet ! N'hésitez pas à nous contacter sur LinkedIn :</p>
+<ul>
+  <li><a href="https://www.linkedin.com/in/adam-najid/" target="_blank" rel="noopener noreferrer">NAJID Adam</a></li>
+  <li><a href="https://www.linkedin.com/in/romaissae-belhaj-635000360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">BELHAJ Romaissae</a></li>
+</ul>
+<p>Faites-nous savoir comment nous pourrions améliorer le projet ou collaborer avec vous !</p>
