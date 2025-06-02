@@ -77,8 +77,8 @@ def gather_dicom_pairs(slice_root, mask_root):
     return slice_paths, mask_paths
 
 # Set your actual paths here
-slice_dir = "/content/drive/MyDrive/PM/New folder (1)/Slices"
-mask_dir = "/content/drive/MyDrive/PM/New folder (1)/Masks"
+slice_dir = "Path/to/your/slices/folder"
+mask_dir = "Path/to/your/masks/folder"
 
 all_slices, all_masks = gather_dicom_pairs(slice_dir, mask_dir)
 
@@ -114,7 +114,7 @@ lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.1
 
 # --- Training Loop ---
 
-num_epochs = 40
+num_epochs = ####"Specify number of epochs"
 for epoch in range(num_epochs):
     model.train()
     total_loss = 0
@@ -136,5 +136,4 @@ for epoch in range(num_epochs):
     print(f"Epoch {epoch+1}/{num_epochs} - Loss: {total_loss:.4f}")
 
 # --- Save Model ---
-torch.save(model.state_dict(), "/content/drive/MyDrive/PM/New folder (1)/fasterrcnn_dicom_tumor_2.pth")
-print("✅ Model saved as 'fasterrcnn_dicom_tumor.pth'")
+torch.save(model.state_dict(), "Path/to/save/model")
