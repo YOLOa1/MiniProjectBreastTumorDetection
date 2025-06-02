@@ -25,6 +25,8 @@ Le projet est orienté vers une application en diagnostic assisté par intellige
         <a href="https://www.cancerimagingarchive.net/collection/duke-breast-cancer-mri/">
           Duke-Breast-Cancer-MRI
         </a>
+
+        
  <strong>L'accès direct aux elements d'entrainement a partir de ce drive</strong><br>
         <a href="https://drive.google.com/drive/folders/1X_KR_CjcM160m_fgApnUabu-laRp1LoD?usp=drive_link">
           Drive
