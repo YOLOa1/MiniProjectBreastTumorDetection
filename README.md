@@ -69,6 +69,28 @@ Exemple d'une visualisation sur un ensemble d'image hors entrainement :
 
 ---
 
+## ⚙️ Implémentation
+Selon vos données et votre objectif, voici comment utiliser ce projet :
+
+🧪 Vous avez des fichiers DICOM + masques (annotations)
+
+➤ Exécutez le script **Model_Training.py**
+
+→ Ce script gère automatiquement la lecture des fichiers .dcm, la construction du dataset personnalisé, l’entraînement du modèle Faster R-CNN et la sauvegarde finale.
+
+🖼️ Vous travaillez avec des images simples (formats .jpg, .png)
+
+➤ Utilisez le script Model_Training_images.py
+
+→ Une version modifiée du pipeline, compatible avec des images standards et des masques associés au format bitmap.
+
+⬇️ Vous souhaitez directement utiliser un modèle pré-entraîné
+
+➤ Téléchargez le fichier fasterrcnn_dicom_tumor.pth ici : <a href="https://drive.google.com/drive/folders/1X_KR_CjcM160m_fgApnUabu-laRp1LoD?usp=drive_link">🔗Google Drive</a>
+
+→ Vous pouvez ensuite charger ce modèle pour l'inférence sans réentraîner.
+
+---
 
 ## 📬 Feedback & Contact</h2>
 <p>Nous serions ravis d’avoir votre avis, vos suggestions ou vos questions sur ce projet ! N'hésitez pas à nous contacter sur LinkedIn :</p>
